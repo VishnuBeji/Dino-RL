@@ -12,16 +12,13 @@ Train model
 Evaluate
 
 Getting Started
-To train and play the game as-is, clone the GitHub repository after you have set up the environment using
-git clone https://github.com/Paperspace/DinoRunTutorial.git
-and work on the jupyter notebook
 Reinforcement Learning Dino Run.ipynb
 Make sure you run init_cache() first time to initialize the file system structure.
 
 Reinforcement Learning
 A child learning to walk
 
-This might be a new word for many but each and every one of us has learned to walk using the concept of Reinforcement Learning (RL) and this is how our brain still works. A reward system is a basis for any RL algorithm. If we go back to the analogy of child’s walk, a positive reward would be a clap from parents or ability to reach a candy and a negative reward would be no candy. The child then first learns to stand up before starting to walk. In terms of Artificial Intelligence, the main aim for an agent, in our case the Dino, is to maximize a certain numeric reward by performing a particular sequence of actions in the environment. The biggest challenge in RL is the absence of supervision (labeled data) to guide the agent. It must explore and learn on its own. The agent starts by randomly performing actions and observing the rewards each action brings and learns to predict the best possible action when faced with a similar state of the environment
+This might be a new word for many but each and every one of us has learned to walk using the concept of Reinforcement Learning (RL) and this is how our brain still works. A reward system is the basis for any RL algorithm. If we go back to the analogy of a child’s walk, a positive reward would be a clap from parents or the ability to reach a candy and a negative reward would be no candy. The child then first learns to stand up before starting to walk. In terms of Artificial Intelligence, the main aim for an agent, in our case the Dino, is to maximize a certain numeric reward by performing a particular sequence of actions in the environment. The biggest challenge in RL is the absence of supervision (labeled data) to guide the agent. It must explore and learn on its own. The agent starts by randomly performing actions and observing the rewards each action brings and learns to predict the best possible action when faced with a similar state of the environment
 
 rl-framework
 A vanilla Reinforcement Learning framework
@@ -39,11 +36,10 @@ Let's setup our environment to start the training process.
 
 1. Select the VM: We need a complete desktop environment where we can capture and utilize the screenshots for training. I chose a Paperspace ML-in-a-box (MLIAB) Ubuntu image. The advantage of MLIAB is that it comes pre-installed with Anaconda and many other ML-libraries.
 
-Screenshot_510
-Machine Learning in a box
+Machine Learning in a Box
 2. Configure and install Keras to use GPU:
-We need to install keras and tensorflow's GPU verion
-Paperspace's VMs have these pre-installed but if not install them
+We need to install Keras and tensorflow's GPU version
+paperspace's VMs have these pre-installed but if not install them
 pip install keras
 pip install tensorflow
 
